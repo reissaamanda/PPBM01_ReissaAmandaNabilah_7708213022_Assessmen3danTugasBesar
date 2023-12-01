@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Kucing"
+    android:background="@drawable/cardview_hijau">
+
+    <ImageView
+        android:id="@+id/cross"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/cross"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/cat"
+        android:layout_marginTop="45dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="200dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:text="CAT"
+            android:textSize="30dp"
+            android:fontFamily="@font/aileronbold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="30dp"
+            android:textAlignment="center"
+            android:text="Kucing adalah hewan peliharaan yang sering dijinakkan dan diberi tempat istimewa dalam kehidupan banyak orang. Mereka memiliki sifat-sifat unik seperti kemampuan berburu yang ulung dan kebiasaan menjilat diri untuk menjaga kebersihan bulu. Selain itu, kucing sering menjadi teman yang setia dan menghadirkan kebahagiaan dalam kehidupan pemilik mereka di berbagai penjuru dunia."
+            android:textSize="18sp"
+            android:fontFamily="@font/alefregular"
+            android:textColor="@color/black"/>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

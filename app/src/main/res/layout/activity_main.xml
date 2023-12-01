@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to PetLife"
+        android:textSize="35sp"
+        android:layout_marginTop="510dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/aileronbold"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="15dp"
+        android:text="Di sini kita bisa saling share bagaimana cara memelihara hewan yang baik"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/alefregular"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_start"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="100dp"
+        android:text="Mulai"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@drawable/style_button"
+        android:fontFamily="@font/aileronheavy"/>
+
+</LinearLayout>
+

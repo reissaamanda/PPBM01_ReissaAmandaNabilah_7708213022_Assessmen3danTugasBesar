@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registrasi"
+    android:background="@drawable/background_cat"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:textAlignment="center"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="10dp"
+        android:text="PetLife"
+        android:textSize="55dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/wigglye"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:text="Sign Up"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:fontFamily="@font/aileronbold"/>
+
+    <EditText
+        style="@style/EditTextWithOutlineStyle"
+        android:id="@+id/edit"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="55dp"
+        android:hint="Email"
+        android:inputType="textPassword"
+        android:fontFamily="@font/alefregular"/>
+
+    <EditText
+        style="@style/EditTextWithOutlineStyle"
+        android:id="@+id/edit1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="55dp"
+        android:hint="Create password"
+        android:inputType="textPassword"
+        android:fontFamily="@font/alefregular"/>
+
+    <EditText
+        style="@style/EditTextWithOutlineStyle"
+        android:id="@+id/edit2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="55dp"
+        android:hint="Confirm password"
+        android:inputType="text"
+        android:fontFamily="@font/alefregular"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_signup"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/style_button"
+        android:fontFamily="@font/aileronheavy"
+        android:text="sign up"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="-Sign Up with-"
+        android:textAlignment="center"
+        android:fontFamily="@font/alefregular"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="178dp"
+            android:src="@drawable/google"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/facebook"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="100dp"
+            android:text="Already have an account?"
+            android:textAlignment="center"
+            android:fontFamily="@font/alefregular"/>
+
+        <TextView
+            android:id="@+id/text_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:text="Log In"
+            android:textStyle="bold"
+            android:textColor="#5FA4B2"
+            android:textAlignment="center"
+            android:fontFamily="@font/alefregular"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PetLife</string>
+    <string-array name="spinner_items">
+        <item>Fakultas Ilmu Terapan</item>
+        <item>Fakultas Industri Kreatif</item>
+        <item>Fakultas Komunikasi Bisnis</item>
+        <item>Fakultas Administrasi Bisnis</item>
+        <item>Fakultas Elektro</item>
+        <item>Fakultas Rekayasa Industri</item>
+        <item>Fakultas Informatika</item>
+    </string-array>
+</resources>
+
+
