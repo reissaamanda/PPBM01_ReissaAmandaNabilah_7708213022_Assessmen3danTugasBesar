@@ -2,7 +2,6 @@ package com.example.assessment1
 
 import android.annotation.SuppressLint
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
@@ -12,6 +11,7 @@ import android.widget.ImageView
 import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.Spinner
+import androidx.appcompat.app.AppCompatActivity
 
 class Pengaturan : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
@@ -27,7 +27,7 @@ class Pengaturan : AppCompatActivity() {
 
         img_pindah.setOnClickListener {
             val _intentPindah =
-                Intent(this, Profile::class.java)
+                Intent(this, Fragment::class.java)
 
             startActivity(_intentPindah)
         }
@@ -36,7 +36,7 @@ class Pengaturan : AppCompatActivity() {
 
         button_pindah.setOnClickListener {
             val _intentPindah1 =
-                Intent(this, Profile::class.java)
+                Intent(this, Fragment::class.java)
 
             startActivity(_intentPindah1)
         }

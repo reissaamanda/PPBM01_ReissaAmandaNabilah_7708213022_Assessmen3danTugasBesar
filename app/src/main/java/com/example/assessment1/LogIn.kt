@@ -1,12 +1,12 @@
 package com.example.assessment1
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 
 class LogIn : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,7 +33,7 @@ class LogIn : AppCompatActivity() {
             if (enteredEmail.isNotEmpty() && enteredPassword.isNotEmpty()) {
                 if (isLoginValid(enteredEmail, enteredPassword)) {
                     // Login berhasil, arahkan ke halaman menu.
-                    val intent = Intent(this, Dashboard::class.java)
+                    val intent = Intent(this, Fragment::class.java)
                     startActivity(intent)
                     finish() // Optional: Tutup halaman login.
                 } else {

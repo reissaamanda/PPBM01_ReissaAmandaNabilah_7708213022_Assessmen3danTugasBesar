@@ -1,11 +1,13 @@
 package com.example.assessment1
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.RatingBar
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.bottomsheet.BottomSheetDialog
 
 class Info : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,19 +26,22 @@ class Info : AppCompatActivity() {
 
         img_pindah.setOnClickListener {
             val _intentPindah =
-                Intent(this, Dashboard::class.java)
+                Intent(this, HomeFragment::class.java)
 
             startActivity(_intentPindah)
         }
 
-        val button_pindah= findViewById<Button>(R.id.btn_rate)
+    }
 
-        button_pindah.setOnClickListener {
-            val _intentPindah1 =
-                Intent(this, Dashboard::class.java)
-
-            startActivity(_intentPindah1)
+    fun showBottomSheet(view: View) {
+        val dialog = BottomSheetDialog(this)
+        val view = layoutInflater.inflate(R. layout. bottomsheet, null)
+        val btnClose = view.findViewById<Button>(R.id.idButtonDismiss)
+        btnClose.setOnClickListener {
+            dialog.dismiss()
         }
-
+        dialog.setCancelable(false)
+        dialog.setContentView(view)
+        dialog.show()
     }
 }

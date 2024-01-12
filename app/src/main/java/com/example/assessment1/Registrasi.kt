@@ -1,10 +1,10 @@
 package com.example.assessment1
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 
 class Registrasi : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +15,7 @@ class Registrasi : AppCompatActivity() {
 
         btn_pindah.setOnClickListener {
             val _intentPindah =
-                Intent(this, Dashboard::class.java)
+                Intent(this, Fragment::class.java)
 
             startActivity(_intentPindah)
         }

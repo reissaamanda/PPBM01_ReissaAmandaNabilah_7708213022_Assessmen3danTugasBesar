@@ -30,16 +30,16 @@
         android:fontFamily="@font/alefregular"/>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_start"
-        android:layout_width="200dp"
+        android:id="@+id/btn_mulai"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:layout_marginLeft="100dp"
-        android:text="Mulai"
-        android:textSize="20sp"
-        android:textColor="@color/white"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/style_button"
-        android:fontFamily="@font/aileronheavy"/>
+        android:fontFamily="@font/aileronheavy"
+        android:text="mulai"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
 
 </LinearLayout>
 
